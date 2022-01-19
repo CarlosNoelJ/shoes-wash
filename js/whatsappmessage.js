@@ -27,7 +27,7 @@ formulario.addEventListener('submit', (event) => {
         let descripcion = document.querySelector('#descripcionMensaje').value
         let mensaje = 'send?phone=' + telefono + '&text=¿Cual es tu nombre?%0A' + nombre + '%0A¿Cuáles son tus apellidos?%0A' + apellidos + '%0A¿Cuál es tu dni?%0A' + dni + '%0A¿Número de Pares?%0A' + numeroPares + '%0A¿Descripción?%0A' + descripcion + ''
         if(isMobile()) {
-            window.open(urlMobile + mensaje, '_blank')
+            window.open(urlDesktop + mensaje, '_blank')
             formulario.reset()
         }else{
             window.open(urlDesktop + mensaje, '_blank')
